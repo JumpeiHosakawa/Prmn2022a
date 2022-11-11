@@ -2,9 +2,12 @@ package lecture02;
 
 public class Car {
     int fuel;
-    Tire tires;
+    Tire[] tires;
     Engine engine;
-    Car(){
+    Car(Tire[] tires, Engine engine){
+                this.tires=tires;
+
+        this.engine=engine;
         fuel=0;
     }
     void run(){
@@ -16,5 +19,9 @@ public class Car {
             System.out.println("燃料を1消費して走りました。");
         }
 
+    }
+    void startEngine(){
+        Engine e=new Engine(400);
+        e.start();
     }
 }
