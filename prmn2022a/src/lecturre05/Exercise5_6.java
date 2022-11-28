@@ -1,9 +1,9 @@
 package lecturre05;
 
-public class Exercise5_5 {
+public class Exercise5_6 {
     public static void main(String[] args) {
         Insect i;
-        i = new Locust();
+        i=new SwallowtailButterfly();
         i.move();
     }
 }
